@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.yyq.slidngmenudemo.MainActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:gravity="center"
+        android:text="已使用"
+        android:textSize="18sp"
+        android:layout_weight="1"
+        android:id="@+id/first_tv"/>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="未使用"
+        android:padding="10dp"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:textSize="18sp"
+        android:id="@+id/second_tv"/>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="待使用"
+        android:layout_weight="1"
+        android:padding="10dp"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:id="@+id/third_tv"/>
+</LinearLayout>
+
+    <ImageView
+        android:id="@+id/scrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="matrix"
+        />
+
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/viewPager"/>
+</LinearLayout>
