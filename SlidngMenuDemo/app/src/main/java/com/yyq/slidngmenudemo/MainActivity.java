@@ -20,9 +20,12 @@ public class MainActivity extends AppCompatActivity implements ViewPager.OnPageC
 
     private TextView firstTv,secondTv,thirdTv;
     private ViewPager viewPager;
+    
+    //title下滑动光标
     private ImageView imageView;
     private MyFragmentPagerAdapter adapter;
     private ArrayList<Fragment> fragmentList;
+    //宽度
     private int width;
 
     @Override
